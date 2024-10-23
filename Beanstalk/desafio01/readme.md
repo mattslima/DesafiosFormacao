@@ -71,14 +71,21 @@ Selecione Spot
 Por fim, pode avançar as duas próximas telas, que nosso Ambiente estará configurado.
 
 
+
+Com isso vamos ver nosso ambiente ok, marcado pelo green em Health e com um código de exemplo.
+Enviroment com health green
+![image](https://github.com/user-attachments/assets/90df9ea2-6b88-4afe-8dcb-c0b1dc43508a)
+Código de exemplo, basta clicar no dns criando pelo beanstalk
+![image](https://github.com/user-attachments/assets/a9a011cc-100f-447f-817e-39e9c339f10f)
+
 ## Step2 - Criar o Aplicação
 
 Nesse step vamos criar a aplicação para fazer o uso do environment.
 ![image](https://github.com/user-attachments/assets/68d5d19d-edc0-4d6a-92ac-be7f5334f8db)
 
+Aqui é bem simples, vamos adicionar o nome da aplicação e uma descrição(opcional)
+<img width="1439" alt="image" src="https://github.com/user-attachments/assets/b94f0703-5a54-4962-99ac-9e8984bd0b82">
 
-Com isso vamos ver nosso ambiente ok, marcado pelo green em Health e com um código de exemplo.
-![image](https://github.com/user-attachments/assets/a9a011cc-100f-447f-817e-39e9c339f10f)
 
 ## Step3 - Deploy do nosso codigo
 
