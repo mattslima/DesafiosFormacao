@@ -90,4 +90,16 @@ Aqui é bem simples, vamos adicionar o nome da aplicação e uma descrição(opc
 ## Step3 - Deploy do nosso codigo
 
 O Beanstalk necessita que você envie o codigo via console em um arquivo zipado, vá na pasta raíz da aplicação crie e um zip, faça o upload do zip e clique em deploy.
+Clica no ambiente, e depois em Upload and Deploy, caso queria fazer o deploy imeadiato da aplicação
+<img width="1432" alt="image" src="https://github.com/user-attachments/assets/b1aaeee0-bd19-4d4a-8e7b-9c28825262c6">
+
+Basta adicionar o arquivo do codigo zipado como mencionado acima.
+Pos o deploy podemos verificar nossa aplicação no ar
+![image](https://github.com/user-attachments/assets/a08311f9-4b84-454c-8467-46575f3d30e5)
+
+Em Application versions podemos ver as versões que já subimos anteriormente. 
+
+![image](https://github.com/user-attachments/assets/7ccece65-81fc-45a2-a889-1ba4f28d02e6)
+
+
 
