@@ -19,7 +19,7 @@ const Header = ({ title, onAdd, showAdd }) => {
 };
 
 Header.defaultProps = {
-  title: "BIA EB V6 - Matheus",
+  title: "BIA EB With ShellScript Automation - Matheus",
 };
 
 export default Header;
