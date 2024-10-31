@@ -99,7 +99,58 @@ Pos o deploy podemos verificar nossa aplicação no ar
 
 Em Application versions podemos ver as versões que já subimos anteriormente. 
 
+Fiz uma edição, pq mudei a arquitetura que estava trabalhando, (Sai de um arm para x86 intel)
+![image](https://github.com/user-attachments/assets/b7c60666-ed3b-46b5-bdc4-9330b5707303)
+
+
+Agora vamos fazer a BIA persistir os dados 
+
+Vamos criar um banco no RDS e conectar a nossa instancia
+
 ![image](https://github.com/user-attachments/assets/7ccece65-81fc-45a2-a889-1ba4f28d02e6)
 
+Em RDS vamos em create database
+![image](https://github.com/user-attachments/assets/9fb4a16c-2a75-48fd-8779-0d1fbc2a775a)
+
+Escolher as opções
+- Stardart create
+- PostgreSQL
+- Version 16.3-R2
+- Freetier
+- Single DB Instance
+- Escolher usuario (usei postgres mesmo)
+Em connectivity vamos associar a nossa EC2
+Restante pode deixar padrão, e criar database
+
+Com o nosso db criado
+![image](https://github.com/user-attachments/assets/dd6c7cf5-2646-47c3-9d2c-da8bb940e6f4)
+
+
+Vamos voltar ao nosso ec2, parar criar o db e rodar a migrate.
+
+Acesse a ec2,(SSM, SSH ou CloudShell mesmo)
+![image](https://github.com/user-attachments/assets/007b07ad-3af5-409b-b9b0-4e40981b284d)
+Vamos rodar os comandos
+~~~
+docker ps
+docker exec -it <CONTAINER ID> /bin/bash
+~~~
+Acessando o container vamos criar o banco e rodar a migrate
+
+~~~
+npx sequelize db:create 
+npx sequelize db:migrate
+~~~
+PS. O meu deu erro pq já tinha feito.
+
+![image](https://github.com/user-attachments/assets/72cabdd8-867a-40e2-9443-e529b41725ac)
+
+
+Agora nossa BIA vai persistir os dados
+
+![image](https://github.com/user-attachments/assets/62147a74-01e4-4b98-ac97-605bfa8d9ea6)
+
+
+![image](https://github.com/user-attachments/assets/126ea730-86b9-4c1e-bf24-ac20db818068)
 
 
