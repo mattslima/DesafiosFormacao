@@ -7,3 +7,4 @@ services:
       DB_USER: postgres
       DB_PWD: postgres
       DB_PORT: 5432
+      DB_HOST: bia.cbu8yu2a03r9.us-east-1.rds.amazonaws.com

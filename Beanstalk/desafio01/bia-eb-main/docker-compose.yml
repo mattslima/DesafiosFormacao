@@ -2,10 +2,11 @@ name: bia-eb-main
 services:
   server:
     environment:
+      DB_HOST: bia.cbu8yu2a03r9.us-east-1.rds.amazonaws.com
       DB_PORT: "5432"
       DB_PWD: postgres
       DB_USER: postgres
-    image: 593793059846.dkr.ecr.us-east-1.amazonaws.com/bia-image:2aec29c
+    image: 593793059846.dkr.ecr.us-east-1.amazonaws.com/bia-image:9cbf8fe
     networks:
       default: null
     ports:
