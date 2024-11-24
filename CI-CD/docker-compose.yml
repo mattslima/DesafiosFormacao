@@ -8,5 +8,5 @@ services:
     environment:
       DB_USER: postgres
       DB_PWD: postgres
-      DB_HOST: tabase
+      DB_HOST: dabase
       DB_PORT: 5432
